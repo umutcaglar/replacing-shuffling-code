@@ -219,11 +219,11 @@ shuffle_replace_words_in_paragraph = function(paragraph_,
 
 
 
-story = "In the frozen lands of Antarctica, there lived a small arctic fox named Frost. Frost was a curious and adventurous fox, always eager to explore the snowy wilderness. But one day, Frost noticed that something was different. The snow and ice that he had always known were starting to melt, and the temperature was getting warmer. Frost knew that this was a problem, and he set out to find a solution. He searched the snowy wilderness for a way to stop the melting, but no matter what he tried, the ice continued to melt. As the days went by, Frost realized that the problem was global warming. He knew that he had to do something to help, so he set out on a mission to spread awareness about the dangers of climate change. Frost traveled far and wide, telling everyone he met about the importance of taking care of the planet. And eventually, his message was heard, and people began to take action to protect the earth."
-story = gsub('[[:punct:] ]+', ' ', story)
+story = "this is the text I wonder if you will be able to read and understand despite heavy shuffling of letters"
+# story = gsub('[[:punct:] ]+', 'They this is the text I wonder if you will be able to read and understand despite heavy shuffling', story)
 
 shuffle_replace_words_in_paragraph(paragraph_ = story, 
-                                   n_shuffle_letters = 0, 
-                                   n_replace_letters = 40,
+                                   n_shuffle_letters = 30, 
+                                   n_replace_letters = 0,
                                    keep_first_last_letters = FALSE,
                                    keep_keywords_as_is = FALSE)
